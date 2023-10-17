@@ -72,7 +72,7 @@ header {
 /*Navigation bar formatting*/
 /*NavBar design inspired by W3Schools, Fleming GIS Collaborative Project Open House 2023 Groups #2308, 2311, 2312 and 2315.*/
 /*To seperate left i.e. name, and right i.e. menu, items from each other*/
-.nav-bar {
+.nav-headerbar {
 	display: flex;
 	overflow: hidden;
 	justify-content: space-between;
@@ -83,13 +83,13 @@ header {
 }
 
 /*Formatting top-left logo i.e. my name*/
-.nav-div {
+.nav-logodiv {
 	padding: 0px 5px;
   }
 
 /*Font family picked from CSS Web Safe Fonts listed by W3School: https://www.w3schools.com/cssref/css_websafe_fonts.php. Aim is to pick a cursive font type*/
 /*Color picked from Google's RGB Color Picker*/
-a#nav-name {
+a#nav-logo {
 	font-family: "Brush Script MT", "Lucida Handwriting", cursive;
 	font-size: 48px;
 	font-weight: lighter;
@@ -97,21 +97,21 @@ a#nav-name {
 }
 
 /*To remove the default list style and set the format for the menu, i.e. Home and More About me*/
-ul.nav-list {  
+ul.menu-list {  
 	list-style-type: none;
 	padding: 5px;
 	overflow: hidden;
 }
 
 /*Arrange items of the NavBar menu horizontally; the list was arranged vertically default*/
-.nav-item {
+.menu-item {
 	float: left;
 }
 
 /*Display: block is implemented to extend the top and bottom margin of the background of the item to the top of page and bottom of header section;*/
 /*and create clickable link for the entire block*/
 /*Formatting NavBar menu items*/
-.nav-item a {
+.menu-item a {
 	display: block;
 	font-size: 18px;
 	color: #1a4b78;
@@ -121,14 +121,14 @@ ul.nav-list {
 
 /*Setting display style when hovering mouse on NavBar items*/
 /*Color picked from Google's RGB Color Picker*/
-.nav-item :hover {
+.menu-item :hover {
 	background-color: #1a4b78;
 	color: #ffffff;
 	font-style: italic;
 }
 
 /*Setting display style for the active link i.e. current webpage location at the NavBar menu*/
-.nav-item a.active {
+.menu-item a.active {
 	background-color: #81b1de;
 	font-weight: bold;
 }
