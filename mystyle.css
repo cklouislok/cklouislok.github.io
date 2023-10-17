@@ -144,12 +144,9 @@ h1 {
 }
 
 /*Re-formatting the font size of the link element in the final heading 1 of the index page to the same as other heading 1s*/
+/*Setting the color of the link on the final heading on index.html to always be black no matter visited or not*/
 a#moreaboutme {
 	font-size: 26px;
-}
-
-/*Setting the color of the link on the final heading on index.html to always be black no matter visited or not*/
-a#moreaboutme:visited {
 	color: #000000;
 }
 
