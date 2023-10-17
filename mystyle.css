@@ -224,7 +224,8 @@ ul.jobduty {
 }
 
 /*Formatting elements on second page*/
-/*Images formatting*/ /*Inspired by W3School*/
+/*Images formatting*/
+/*Image caption block concept inspired by W3Schools*/
 /*Formatting outermost div block for both image and caption containers*/
 div.imgcapblock {
 	padding: 0px 10px 10px;
@@ -248,7 +249,7 @@ div.portrait {
 
 /*Formatting div containing captions of landscape image*/
 /*Width and padding are set to align the left and right borders of the caption block with those of the associated image*/
-/*Purpose is to display captions below images with a centered position*/
+/*Purpose is to display image captions below images with a centered position*/
 div.capblock {
 	font-size: 16px;
 	padding: 0px 20px;
@@ -257,7 +258,7 @@ div.capblock {
 
 /*Formatting div containing captions of portrait image*/
 /*Width and padding are set to align the left and right borders of the caption block with those of the associated image*/
-/*Purpose is to display captions below images with a centered position*/
+/*Purpose is to display image captions below images with a centered position*/
 div.capblockportrait {
 	font-size: 16px;
 	padding: 0px 20px;
@@ -265,6 +266,7 @@ div.capblockportrait {
 }
 
 /*Setting rounded corners for the images to fit in the image div aka picture frame*/
+/*Rounded image concept inspired by W3Schools*/
 img {					
 	border-radius: 16px;
 }
