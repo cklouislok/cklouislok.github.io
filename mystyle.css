@@ -1,0 +1,268 @@
+/*Setting webpage background color and margin*/
+/*Color is picked from Google's RGB Color Picker; blue is my favourite color and this website with implement various hue and saturation of blue colors*/
+body {
+	background-color: #e8f4fc;
+	margin: 0px;
+}
+
+/*Setting generic font family and size for the entire website */
+* {
+	font-family: Georgia;
+	font-size: 14px;
+}
+
+/*Setting font style for each specific class*/
+.center {
+	text-align: center;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/*Setting generic format for all hyperlinks in the website: remove underline*/
+a {
+	text-decoration: none;
+}
+
+/*Setting generic format for all external links to display them uniquely over the website*/
+/*All external links: bold*/
+/*Unvisited external links: green font color, with light blue dotted underline*/
+/*Color inspired by and picked from HKU's logo*/
+a.external {
+	color: #14b18c;
+	border-bottom: 1px dotted #1486de;
+	font-weight: bold;
+}
+
+/*Visited external links: dark red font color, with white underline; tried to change to solid line but did not work*/
+/*Colors inspired by and picked from CityU's logo*/
+a.external:visited {
+	color: #a50c59;
+	border-bottom: 1px #000000;
+}
+
+/*Hovered external links: yellow font color, black background color, italic style, no border*/
+/*colors inspired by and picked from Dalhousie's logo*/
+a.external:hover {
+	background-color: #000000;
+	color: #ffd401; 
+	font-style: italic;
+	border-style: none;
+}
+
+/*External links being click will turn white, and with the same background and font style as hovered external links to increase visual contrast*/
+a.external:active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+/*Setting background color of header section, to distinguish from the main content of the website*/
+/*Color picked is a test result from Google's RGB Color Picker for best combination with the body background color*/
+/*Double line set as bottom border of the header section to seperate from the main content*/
+header {
+	background-color: #ebf2f0;
+	border-bottom: 5px double #1486de;
+}
+
+/*Navigation bar formatting*/
+/*NavBar design inspired by W3Schools, Fleming GIS Collaborative Project Open House 2023 Groups #2308, 2311, 2312 and 2315.*/
+/*To seperate left i.e. name, and right i.e. menu, items from each other*/
+.nav-bar {
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+	width: auto;
+	height: 60px;
+	align-items: center;
+	padding: 0px 40px;
+}
+
+/*Formatting top-left logo i.e. my name*/
+.nav-div {
+	padding: 0px 5px;
+  }
+
+/*Font family picked from CSS Web Safe Fonts listed by W3School: https://www.w3schools.com/cssref/css_websafe_fonts.php. Aim is to pick a cursive font type*/
+/*Color picked from Google's RGB Color Picker*/
+a#nav-name {
+	font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+	font-size: 48px;
+	font-weight: lighter;
+	color: #1b30cf;
+}
+
+/*To remove the default list style and set the format for the menu, i.e. Home and More About me*/
+ul.nav-list {  
+	list-style-type: none;
+	padding: 5px;
+	overflow: hidden;
+}
+
+/*Arrange items of the NavBar menu horizontally; the list was arranged vertically default*/
+.nav-item {
+	float: left;
+}
+
+/*Display: block is implemented to extend the top and bottom margin of the background of the item to the top of page and bottom of header section;*/
+/*and create clickable link for the entire block*/
+/*Formatting NavBar menu items*/
+.nav-item a {
+	display: block;
+	font-size: 18px;
+	color: #1a4b78;
+	padding: 20px;
+	font-weight: normal;
+}
+
+/*Setting display style when hovering mouse on NavBar items*/
+/*Color picked from Google's RGB Color Picker*/
+.nav-item :hover {
+	background-color: #1a4b78;
+	color: #ffffff;
+	font-style: italic;
+}
+
+/*Setting display style for the active link i.e. current webpage location at the NavBar menu*/
+.nav-item a.active {
+	background-color: #81b1de;
+	font-weight: bold;
+}
+
+/*Setting generic style for Heading 1; setting font size to absolut values and add underline to the heading to increase emphasis*/
+/*Left and right argains modified to allow sufficient reading space from the left and right margins of the browser's window; 
+/*top and bottom margins are set to create gaps between the previous and subsequent sections*/
+h1 {
+	font-size: 26px;
+	font-weight: 900;
+	margin: 20px 20px 10px;
+	text-decoration: solid underline #808080;
+}
+
+/*RE-formatting the font size of the link element in the final heading 1 of the index page to the same as other heading 1s*/
+a#moreaboutme {
+	font-size: 26px;
+}
+
+/*Setting generic padding of all div elements for better visual effect*/
+div {
+	padding: 10px;
+}
+
+/*Setting font size and color for the self introduction paragraph*/
+div#selfintro {
+	font-size: 14px;
+	color: #313233;
+}
+
+/*Formatting tables*/
+/*Inspired by W3Schools*/
+/*Education and employment tables take up full width of the webpage to display all content*/
+table.full {
+	width: 100%;
+}
+
+/*Skill table takes up half width of the webpage for better visuals because only one word exist inside each table cell*/
+table.half {
+	width: 50%;
+}
+
+/*Setting borders of all tables, and their rows and columns*/
+/*Inspired by W3Schools*/
+table, td, th {
+	border: 1px dotted #808080;
+	border-collapse: collapse;
+}
+
+/*Formatting table rows, including padding and text alignment*/
+th, td {
+	padding: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*Formatting table column row, i.e. first row of every table, including background color, font color, size and weight*/
+th {
+	background-color: #81b1de;
+	color: #1a4b78;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*Formatting even row numbers of the tables to create better reading experience of the tables*/
+/*Modified from W3School*/
+tr:nth-child(even) {
+	background-color: #ebf2f0;
+}
+
+/*Formatting hovered table rows to create better reading experience of the tables*/
+/*Modified from W3School*/
+tr:hover {
+	background-color: #f1ffde;
+}
+
+/*Attempted to make the content inside the hovered cell bold when hovering mouse on it, it works but the cell and table sizes will change as a side effect.*/
+/*Not yet figured out the solution to fix the height and width of the table so the change of font-weight is not included.*/
+td:hover {
+	background-color: #d8e6c5;
+	color: #0802b8;
+}
+
+/*Formatting employment table: modify list style inside the cell to display multiple lines*/
+/*A list is put in a table cell to include multiple lines of records*/
+ul.jobduty {
+	list-style-type: circle;
+	padding: 0px 0px 0px 20px;
+	overflow: hidden;
+	
+}
+
+/*Formatting elements on second page*/
+/*Images formatting*/ /*Inspired by W3School*/
+/*Formatting outermost div block for both image and caption containers*/
+div.imgcapblock {
+	padding: 0px 10px 10px;
+}
+
+/*Resize div containing landscape images to their native resolution/size; a black solid rounded-corner border is added surrounding the image; acting as picture frame*/
+div.imgblock {
+	width: 400px;
+	height: 300px;
+	border-radius: 18px;
+	border: 2px ridge #000000;
+	margin: 20px 10px 0px;
+	padding: 0px;
+}
+
+/*Resize div containing portrait image*/
+div.portrait {
+	width: 300px;
+	height: 400px;
+}
+
+/*Formatting div containing captions of landscape image*/
+/*Width and padding are set to align the left and right borders of the caption block with those of the associated image*/
+/*Purpose is to display captions below images with a centered position*/
+div.capblock {
+	font-size: 16px;
+	padding: 0px 20px;
+	width: 383.2px;
+}
+
+/*Formatting div containing captions of portrait image*/
+/*Width and padding are set to align the left and right borders of the caption block with those of the associated image*/
+/*Purpose is to display captions below images with a centered position*/
+div.capblockportrait {
+	font-size: 16px;
+	padding: 0px 20px;
+	width: 283.2px;
+}
+
+/*Setting rounded corners for the images to fit in the image div aka picture frame*/
+img {					
+	border-radius: 16px;
+}
