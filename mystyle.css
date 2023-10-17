@@ -35,7 +35,7 @@ a {
 /*Color inspired by and picked from HKU's logo*/
 a.external {
 	color: #14b18c;
-	border-bottom: 1px dotted #1486de;
+	border-bottom: 1px solid #1486de;
 	font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ a.external {
 /*Colors inspired by and picked from CityU's logo*/
 a.external:visited {
 	color: #a50c59;
-	border-bottom: 1px #000000;
+	border-bottom: 1px solid #000000;
 }
 
 /*Hovered external links: yellow font color, black background color, italic style, no border*/
@@ -140,14 +140,14 @@ h1 {
 	font-size: 26px;
 	font-weight: 900;
 	margin: 20px 20px 10px;
-	text-decoration: solid underline #808080;
 }
 
 /*Re-formatting the font size of the link element in the final heading 1 of the index page to the same as other heading 1s*/
-/*Setting the color of the link on the final heading on index.html to always be blue no matter visited or not*/
+/*Setting the color of the link on the final heading on index.html to always be blue no matter visited or not, to show that it is a clickable link*/
 a#moreaboutme {
 	font-size: 26px;
 	color: blue;
+	text-decoration: 2px solid underline;
 }
 
 /*Setting generic padding of all div elements for better visual effect*/
