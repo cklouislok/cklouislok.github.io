@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--1 Error found upon W3 HTML validator (html files uploaded to validator): The character encoding was not declared. Proceeding using windows-1252.-->
+<!--The following solution is found online at StackOverflow https://stackoverflow.com/questions/11996257/the-character-encoding-of-the-html-document-was-not-declared-->
+<meta charset="utf-8">
+<title>More About Me</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<!--This page includes additional information about me.-->
+<body>
+<!--Create a header section, which incorporates a top navigation bar containing a logo i.e. my name, links to the index.html page and moreaboutme.html page.-->
+<header>
+<!--MenuOption Begin--> <!--NavBar design inspired by W3Schools, Fleming GIS Collaborative Project Open House 2023 Groups #2308, 2311, 2312 and 2315.-->
+	<nav class="nav-bar">
+		<div class="nav-div">
+			<a href="index.html" id="nav-name">Louis</a>
+		</div>
+		<ul class="nav-list">
+			<li class="nav-item">
+				<a class="active" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="moreaboutme.html">More About Me</a>
+			</li>
+		</ul>
+	</nav>
+<!--MenuOption End-->
+</header>
+
+<!--First section introduce my international experience.-->
+<h1>International Exposure</h1>
+<!--Create blocks of images and captions. Each outermost div element contains two subordinate div elements, one as image container and one as caption container.-->
+<!--ImageOption Begin-->
+<div class="imgcapblock">
+	<!--Image block-->
+	<div class="imgblock">
+		<img src="image/DalU.jpg" alt="Dalhousie University">
+	</div>
+	<!--Caption block-->
+	<div class="capblock italic center">Exchange Study at Dalhousie University</div>
+</div>
+<div class="imgcapblock">
+	<!--Image block-->
+	<div class="imgblock">
+		<img src="image/NUS.jpg" alt="NUS, Singapore">
+	</div>
+	<!--Caption block-->
+	<div class="capblock italic center">Study Tour to Singapore</div>
+</div>
+<!--ImageOption End-->
+
+<!--Second section introduces my interests.-->
+<h1>Interests</h1>
+<!--Create blocks of images and captions. Each outermost div element contains two subordinate div elements, one as image container and one as caption container.-->
+<!--ImageOption Begin-->
+<div class="imgcapblock">
+	<!--Image block-->
+	<div class="imgblock">
+		<img src="image/First.jpg" alt="Grindelwald First, Switzerland">
+	</div>
+	<!--Caption block-->
+	<div class="capblock italic center">Travelling</div>
+</div>
+<div class="imgcapblock">
+	<!--Image block-->
+	<div class="imgblock">
+		<img src="image/Camping.jpg" alt="Camping">
+	</div>
+	<!--Caption block-->
+	<div class="capblock italic center">Camping</div>
+</div>
+<div class="imgcapblock">
+	<!--Image block-->
+	<div class="imgblock portrait">
+		<img src="image/TreeClimbing.jpg" alt="Tree Climbing">
+	</div>
+	<!--Caption block-->
+	<div class="capblockportrait italic center">Tree Climbing</div>
+</div>
+<!--ImageOption End-->
+</body>
+</html>

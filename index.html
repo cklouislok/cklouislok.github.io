@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--1 Error found upon W3 HTML validator (html files uploaded to validator): The character encoding was not declared. Proceeding using windows-1252.-->
+<!--The following solution is found online at StackOverflow https://stackoverflow.com/questions/11996257/the-character-encoding-of-the-html-document-was-not-declared-->
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<!--This home page includes summaries of my education and employment history, and related skills.-->
+<body>
+<!--Create a header section, which incorporates a top navigation bar containing a logo i.e. my name, links to the index.html page and moreaboutme.html page.-->
+<header>
+<!--MenuOption Begin--> <!--NavBar design inspired by W3Schools, Fleming GIS Collaborative Project Open House 2023 Groups #2308, 2311, 2312 and 2315.-->
+	<nav class="nav-bar">
+		<div class="nav-div">
+			<a href="index.html" id="nav-name">Louis</a>
+		</div>
+		<ul class="nav-list">
+			<li class="nav-item">
+				<a class="active" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="moreaboutme.html">More About Me</a>
+			</li>
+		</ul>
+	</nav>
+<!--MenuOption End-->
+</header>
+
+<!--First section with a brief self introduction paragraph.-->
+<h1 class="italic">About Louis</h1>					<!--Setting the font style as italic to stand out from the rest of other headings in the page.-->
+<div id="selfintro" class="justify">
+	A Geography graduate who envisages a career in Geographical Information Systems	and is passionate about spatial analysis. 
+	Consistently seeking ways to automate cumbersome tasks at work. 
+	Self-acknowledged as a diligent, detail-minded, and organised person.
+</div>
+
+<!--Second section with a summary table of education history.-->
+<h1>Education</h1>
+<div>
+	<!--Table design inspired by W3Schools-->
+	<!--TableOption Begin-->
+	<table class="full">
+		<tr>
+			<th>Institution</th>
+			<th>Level</th>
+			<th>Year of Graduation</th>
+			<th>Achievement</th>
+		</tr>
+		<tr>
+			<!--LinksOption Begin-->
+			<td><a href="https://www.dal.ca/" class="external">Dalhousie University</a></td>
+			<!--LinksOption End-->
+			<td>Exchange Student in the Faculty of Science</td>
+			<td class="italic">2012</td>
+			<td class="italic">Completion</td>
+		</tr>
+		<tr>
+			<!--LinksOption Begin-->
+			<td><a href="https://www.hkbu.edu.hk/" class="external">Hong Kong Baptist University</a></td>
+			<!--LinksOption End-->
+			<td>Bachelor of Social Sciences (Honours) in Geography</td>
+			<td class="italic">2013</td>
+			<td class="italic">First Class Honours</td>
+		</tr>
+	</table>
+	<!--TableOption End-->
+</div>
+
+<!--Third section with a summary table of employment history.-->
+<h1>Employment History</h1>
+<div>
+	<!--Table design inspired by W3Schools-->
+	<!--TableOption Begin-->
+	<table class="full"> 
+		<tr>
+			<th>Company</th>
+			<th>Position</th>
+			<th>Job Duties</th>
+			<th>Employment Period</th>
+		</tr>
+		<tr>
+			<!--LinksOption Begin-->
+			<td><a href="https://www.hku.hk/" class="external">The University of Hong Kong</a></td>
+			<!--LinksOption End-->
+			<td>Senior Executive Officer</td>
+			<td>
+				<!--Create a list inside the cell to display multiple records i.e. job duties.-->
+				<ul class="jobduty">
+					<li class="justify">
+					Managed recruitment and appointment of administrative and teaching-support staff
+					</li>
+					<li class="justify">
+					Maintained personnel records
+					</li>
+					<li class="justify">
+					Handled internal and external enquiries about Human Resources matters
+					</li>
+				</ul>
+			</td>
+			<td class="italic">09/2018 - 08/2023</td>
+		</tr>
+		<tr>
+			<!--LinksOption Begin-->
+			<td><a href="https://www.hku.hk/" class="external">The University of Hong Kong</a></td>
+			<!--LinksOption End-->
+			<td>Executive Officer</td>
+			<td>
+				<!--Create a list inside the cell to display multiple records i.e. job duties.-->
+				<ul class="jobduty">
+					<li class="justify">
+					Provided clerical and administrative support for Teaching and Learning, and Human Resources spectrums
+					</li>
+					<li class="justify">
+					Perfromed database management, data analyses, and compiled reports
+					</li>
+					<li class="justify">
+					Assisted in the recruitment of administrative and teaching-support staff
+					</li>
+				</ul>
+			</td>
+			<td class="italic">09/2015 - 09/2018</td>
+		</tr>
+		<tr>
+			<!--LinksOption Begin-->
+			<td><a href="https://www.cityu.edu.hk/" class="external">City University of Hong Kong</a></td>
+			<!--LinksOption End-->
+			<td>Executive Assistant</td>
+			<td>
+				<!--Create a list inside the cell to display multiple records i.e. job duties.-->
+				<ul class="jobduty">
+					<li class="justify">
+					Provided clerical and logistics support for general office administration
+					</li>
+					<li class="justify">
+					Liasied with internal and external parties on financial and procurement-related matters
+					</li>
+				</ul>
+			</td>	
+			<td class="italic">09/2013 - 09/2015</td>
+		</tr>
+	</table>
+	<!--TableOption End-->
+</div>
+
+<!--Fourth section with a summary table of language skills.-->
+<h1>Language Skills</h1>
+<div>
+	<!--Table design inspired by W3Schools-->
+	<!--TableOption Begin-->
+	<table class="half">
+		<tr>
+			<th>Language</th>
+			<th>Fluency</th>
+		</tr>
+		<tr>
+			<td>English</td>
+			<td class="italic">Fluent</td>
+		</tr>
+		<tr>
+			<td>Cantonese</td>
+			<td class="italic">Native</td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td class="italic">Fluent</td>
+		</tr>
+	</table>
+	<!--TableOption End-->
+</div>
+
+<!--Fifth section with a link in the heading to the second page of the website i.e. moreaboutme.html.-->
+<h1 class="italic">			<!--Setting the font style as italic to stand out from the rest of other headings in the page.-->
+	<a id="moreaboutme" href="moreaboutme.html">More about Louis</a>
+</h1>
+
+</body>
+</html>
